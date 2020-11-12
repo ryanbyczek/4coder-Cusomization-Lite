@@ -127,9 +127,9 @@ void setup_ryanb_mapping(Mapping* mapping, i64 global_id, i64 file_id, i64 code_
     Bind(interactive_open,                KeyCode_O,           KeyCode_Control);                // ctrl + o               : open existing file prompt
     Bind(interactive_switch_buffer,       KeyCode_W,           KeyCode_Control);                // ctrl + w               : switch buffer prompt
     Bind(kill_buffer,                     KeyCode_NumPadStar,  KeyCode_Control);                // ctrl + numpad *        : close file
-    Bind(swap_panels,                     KeyCode_Comma,       KeyCode_Control, KeyCode_Shift); // ctrl + shift + ,       : swap panels
+    Bind(quick_swap_buffer,               KeyCode_W,           KeyCode_Control, KeyCode_Shift); // ctrl + shift + ,       : swap panels
+    Bind(swap_panels,                     KeyCode_Comma,       KeyCode_Control, KeyCode_Shift); // ctrl + shift + w       : quick swap buffer to previous buffer
     Bind(toggle_fullscreen,               KeyCode_F11);                                         // f11                    : toggle full screen
-    
     Bind(ryanb_command_lister,            KeyCode_F12);                                         // f12                    : open custom command lister
     Bind(ryanb_interactive_open_all_code, KeyCode_O,           KeyCode_Control, KeyCode_Shift); // ctrl + shift + o       : open existing file prompt and open all code near that file
     Bind(ryanb_open_panel_vsplit,         KeyCode_NumPadPlus,  KeyCode_Control);                // ctrl + numpad +        : open split panel
