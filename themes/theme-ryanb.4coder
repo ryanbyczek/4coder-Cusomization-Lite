@@ -1,4 +1,4 @@
-defcolor_back = 0xFF343235;
+defcolor_back = 0xFF242225;
 defcolor_bar = 0xFFADADB0;
 defcolor_bar_active = 0xFF666666;
 defcolor_base = defcolor_back;
@@ -41,10 +41,10 @@ defcolor_bool_constant = defcolor_int_constant;
 defcolor_special_character = 0xFFFF0000;
 defcolor_ghost_character = 0xFFAACCEE;
 
-defcolor_paste = 0xFF00DDFF;
-defcolor_undo = 0xFF00DDFF;
+defcolor_paste = 0xFF00DD00;
+defcolor_undo = 0xFF00DD00;
 
-defcolor_back_cycle = {0xFF242225, 0xFF444245, 0xFF242225, 0xFF444245};
+defcolor_back_cycle = {0xFF161616, 0xFF202020, 0xFF161616, 0xFF202020};
 defcolor_text_cycle = {0xFF3FF9A2, 0xFFEF80B3, 0xFF3FF9A2, 0xFFEF80B3};
 
 defcolor_line_numbers_back = defcolor_back;
