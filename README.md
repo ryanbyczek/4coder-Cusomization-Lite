@@ -1,5 +1,5 @@
 # 4coder Customization Lite
-My 4coder customization layer for 4coder 4.1.6 (Beta)
+My 4coder customization layer for 4coder 4.1.8 (Beta)
 
 This is a simplified version of my customization layer containing only my minimum set of neccessary functions
 
