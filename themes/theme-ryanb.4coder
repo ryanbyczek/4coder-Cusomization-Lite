@@ -6,7 +6,7 @@ defcolor_base = 0xFF000000;
 defcolor_pop1 = 0xFF00DDFF;
 defcolor_pop2 = 0xFFAA6622;
 
-defcolor_text_default = 0xFFA0A0A0;
+defcolor_text_default = 0xFF90A090;
 defcolor_at_highlight = defcolor_back;
 
 defcolor_margin = defcolor_back;
@@ -26,13 +26,13 @@ defcolor_highlight_cursor_line = defcolor_at_cursor;
 defcolor_highlight_junk = 0xFFFF0000;
 defcolor_highlight_white = 0xFFFF0000;
 
-defcolor_comment = 0xFF22AA66;
+defcolor_comment = 0xFF22AA66;//0xFF2090F0;//0xFF22AA66;
 defcolor_comment_pop = {defcolor_pop1, defcolor_pop2};
 
-defcolor_keyword = 0xFFAA8866;
-defcolor_preproc = 0xFF668888;
+defcolor_keyword = 0xFF606060;
+defcolor_preproc = defcolor_keyword;
 defcolor_include = defcolor_preproc;
-defcolor_str_constant = defcolor_keyword;
+defcolor_str_constant = 0xFF2090F0;
 defcolor_char_constant = defcolor_str_constant;
 defcolor_int_constant = defcolor_str_constant;
 defcolor_float_constant = defcolor_int_constant;
@@ -48,4 +48,4 @@ defcolor_back_cycle = {defcolor_back, 0xFF101010, 0xFF141414, 0xFF1A1A1A};
 defcolor_text_cycle = {defcolor_pop1, defcolor_pop2, defcolor_pop1, defcolor_pop2};
 
 defcolor_line_numbers_back = defcolor_back;
-defcolor_line_numbers_text = defcolor_comment;
+defcolor_line_numbers_text = 0xFF303030;
