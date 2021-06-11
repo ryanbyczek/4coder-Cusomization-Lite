@@ -61,16 +61,17 @@ indent_width = 4;
 default_tab_width = 4;
 
 // Theme
-default_theme_name = "theme-raspberry-pi";
+default_theme_name = "theme-ryanb";
 highlight_line_at_cursor = true;
 
 // Font
-default_font_name = "liberation-mono.ttf";
+default_font_name ="PressStart2P-Regular.ttf";
+default_font_name2 = "liberation-mono.ttf";
 default_font_size = 16;
 default_font_hinting = false;
 
 // User
-user_name = "RYANB";
+//user_name = "";
 
 // Keyboard AltGr setting
 lalt_lctrl_is_altgr = false;
