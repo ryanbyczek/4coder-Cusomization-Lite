@@ -9,3 +9,4 @@ This is a simplified version of my customization layer containing only my minimu
 * (optional) theme-ryanb.4coder - my personal theme
 * (optional) theme-raspberry-pi.4coder - a theme using offical color codes from the Raspberry Pi Style Guide
 
+Remove bindings.4coder if present to prevent override of this custom layer.
