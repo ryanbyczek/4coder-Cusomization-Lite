@@ -128,6 +128,14 @@ CUSTOM_COMMAND_SIG(ryanb_page_up) {
     set_mark(app);
 }
 
+CUSTOM_COMMAND_SIG(ryanb_paste_and_replace_token) {
+    move_left_token_boundary(app);
+    set_mark(app);
+    move_right_token_boundary(app);
+    delete_char(app);
+    paste_and_indent(app);
+}
+
 CUSTOM_COMMAND_SIG(ryanb_seek_beginning_of_line) {
     seek_beginning_of_line(app);
     left_adjust_view(app);
@@ -236,6 +244,7 @@ void setup_ryanb_mapping(Mapping* mapping, i64 global_id, i64 file_id, i64 code_
     Bind(ryanb_jump_to_last_point,           KeyCode_Minus,        KeyCode_Control);
     Bind(write_todo,                         KeyCode_T,            KeyCode_Alt);
     Bind(word_complete,                      KeyCode_Tab);
+    Bind(ryanb_paste_and_replace_token,      KeyCode_V,            KeyCode_Alt);
     Bind(paste_and_indent,                   KeyCode_V,            KeyCode_Control);
 }
 
