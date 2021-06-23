@@ -81,6 +81,12 @@ CUSTOM_COMMAND_SIG(ryanb_build_in_build_panel) {
     change_to_build_panel(app);
 }
 
+CUSTOM_COMMAND_SIG(ryanb_goto_line) {
+    goto_line(app);
+    center_view(app);
+    set_mark(app);
+}
+
 CUSTOM_COMMAND_SIG(ryanb_interactive_open_all_code) {
     close_all_code(app);
     interactive_open(app);
@@ -134,6 +140,12 @@ CUSTOM_COMMAND_SIG(ryanb_paste_and_replace_token) {
     move_right_token_boundary(app);
     delete_char(app);
     paste_and_indent(app);
+}
+
+CUSTOM_COMMAND_SIG(ryanb_search) {
+    search(app);
+    center_view(app);
+    set_mark(app);
 }
 
 CUSTOM_COMMAND_SIG(ryanb_seek_beginning_of_line) {
@@ -203,10 +215,10 @@ void setup_ryanb_mapping(Mapping* mapping, i64 global_id, i64 file_id, i64 code_
     Bind(ryanb_move_down_to_blank_line,  KeyCode_Down,      KeyCode_Control);
     Bind(seek_end_of_line,               KeyCode_End);
     Bind(goto_end_of_file,               KeyCode_End,       KeyCode_Control);
-    Bind(search,                         KeyCode_F,         KeyCode_Control);
+    Bind(ryanb_search,                         KeyCode_F,         KeyCode_Control);
     Bind(list_all_locations,             KeyCode_F,         KeyCode_Control, KeyCode_Shift);
     Bind(rename_file_query,              KeyCode_F2,        KeyCode_Control);
-    Bind(goto_line,                      KeyCode_G,         KeyCode_Control);
+    Bind(ryanb_goto_line,                KeyCode_G,         KeyCode_Control);
     Bind(query_replace,                  KeyCode_H,         KeyCode_Control);
     Bind(query_replace_identifier,       KeyCode_H,         KeyCode_Control, KeyCode_Alt);
     Bind(seek_beginning_of_textual_line, KeyCode_Home);
@@ -244,8 +256,8 @@ void setup_ryanb_mapping(Mapping* mapping, i64 global_id, i64 file_id, i64 code_
     Bind(ryanb_jump_to_last_point,           KeyCode_Minus,        KeyCode_Control);
     Bind(write_todo,                         KeyCode_T,            KeyCode_Alt);
     Bind(word_complete,                      KeyCode_Tab);
-    Bind(ryanb_paste_and_replace_token,      KeyCode_V,            KeyCode_Alt);
     Bind(paste_and_indent,                   KeyCode_V,            KeyCode_Control);
+    Bind(ryanb_paste_and_replace_token,      KeyCode_V,            KeyCode_Control, KeyCode_Shift);;
 }
 
 /////////////////////////////////////////////////////////////////////////////
