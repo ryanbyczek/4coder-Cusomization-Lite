@@ -215,7 +215,7 @@ void setup_ryanb_mapping(Mapping* mapping, i64 global_id, i64 file_id, i64 code_
     Bind(ryanb_move_down_to_blank_line,  KeyCode_Down,      KeyCode_Control);
     Bind(seek_end_of_line,               KeyCode_End);
     Bind(goto_end_of_file,               KeyCode_End,       KeyCode_Control);
-    Bind(ryanb_search,                         KeyCode_F,         KeyCode_Control);
+    Bind(ryanb_search,                   KeyCode_F,         KeyCode_Control);
     Bind(list_all_locations,             KeyCode_F,         KeyCode_Control, KeyCode_Shift);
     Bind(rename_file_query,              KeyCode_F2,        KeyCode_Control);
     Bind(ryanb_goto_line,                KeyCode_G,         KeyCode_Control);
@@ -227,7 +227,9 @@ void setup_ryanb_mapping(Mapping* mapping, i64 global_id, i64 file_id, i64 code_
     Bind(move_left,                      KeyCode_Left);
     Bind(move_left_token_boundary,       KeyCode_Left,      KeyCode_Control);
     Bind(ryanb_page_down,                KeyCode_PageDown);
+    Bind(goto_end_of_file,               KeyCode_PageDown,  KeyCode_Control);
     Bind(ryanb_page_up,                  KeyCode_PageUp);
+    Bind(goto_beginning_of_file,         KeyCode_PageUp,    KeyCode_Control);
     Bind(move_right,                     KeyCode_Right);
     Bind(move_right_token_boundary,      KeyCode_Right,     KeyCode_Control);
     Bind(exit_4coder,                    KeyCode_Q,         KeyCode_Control);
