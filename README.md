@@ -1,7 +1,8 @@
 # 4coder Customization Lite
 My 4coder customization layer for 4coder 4.1.8 (Beta)
 
-This is a simplified version of my customization layer containing only my minimum set of neccessary functions
+This is a simplified version of my customization layer containing only my minimum set of neccessary functions.
+
 Remove bindings.4coder if present to prevent override of this custom layer.
 
 File descriptions:
