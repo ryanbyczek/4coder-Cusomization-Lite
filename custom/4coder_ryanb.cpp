@@ -185,6 +185,7 @@ void setup_ryanb_mapping(Mapping* mapping, i64 global_id, i64 file_id, i64 code_
     
     Bind(ryanb_build_in_build_panel,      KeyCode_B,       KeyCode_Control);
     Bind(change_active_panel,             KeyCode_Comma,   KeyCode_Control);
+    Bind(change_active_panel,             KeyCode_Period,  KeyCode_Control);
     Bind(close_build_footer_panel,        KeyCode_Escape);
     Bind(exit_4coder,                     KeyCode_F4,      KeyCode_Alt);
     Bind(kill_buffer,                     KeyCode_F4,      KeyCode_Control);
@@ -259,7 +260,7 @@ void setup_ryanb_mapping(Mapping* mapping, i64 global_id, i64 file_id, i64 code_
     Bind(write_todo,                         KeyCode_T,            KeyCode_Alt);
     Bind(word_complete,                      KeyCode_Tab);
     Bind(paste_and_indent,                   KeyCode_V,            KeyCode_Control);
-    Bind(ryanb_paste_and_replace_token,      KeyCode_V,            KeyCode_Control, KeyCode_Shift);;
+    Bind(ryanb_paste_and_replace_token,      KeyCode_V,            KeyCode_Control, KeyCode_Shift);
 }
 
 /////////////////////////////////////////////////////////////////////////////
