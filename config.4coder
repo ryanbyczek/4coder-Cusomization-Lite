@@ -61,13 +61,12 @@ indent_width = 4;
 default_tab_width = 4;
 
 // Theme
-default_theme_name = "theme-ryanb";
+default_theme_name = "theme-dreadware-dev";
 highlight_line_at_cursor = true;
 
 // Font
-default_font_name ="PressStart2P-Regular.ttf";
-default_font_name2 = "liberation-mono.ttf";
-default_font_size = 16;
+default_font_name ="UbuntuMono-B.ttf";
+default_font_size = 14;
 default_font_hinting = false;
 
 // User
